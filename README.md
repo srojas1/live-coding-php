@@ -5,8 +5,8 @@
 Before joining the live coding challenge, you should have set up the local environment for the application.
 
 Consider having installed:
-- PHP 7.3^ and extension: php-xml
-- Composer
+- Composer (for ubuntu: sudo apt install composer)
+- PHP 7.3^ and extension: php-xml (for ubuntu: sudo apt install php-xml)
 
 Steps:
 
