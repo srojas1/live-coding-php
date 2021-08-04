@@ -15,7 +15,7 @@ class ClientModel {
 		$this->clientData = json_decode($string, true);
 	}
 
-	public static function getClients() {
+	public function getClients() {
 		return $this->clientData;
 	}
 
@@ -25,8 +25,32 @@ class ClientModel {
 		$data['id'] = end($clients)['id'] + 1;
 		$clients[] = $data;
 
-		$this->helper->putJson($clients);
+		$this->helper->putJson($clients, 'clients');
 
 		return $data;
+	}
+
+	public function updateClient($data) {
+		$updateClient = [];
+		$clients = $this->getClients();
+		foreach ($clients as $key => $client) {
+			if ($client['id'] == $data['id']) {
+				$clients[$key] = $updateClient = array_merge($client, $data);
+			}
+		}
+
+		$this->helper->putJson($clients, 'clients');
+
+		return $updateClient;
+	}
+
+	public function getClientById($id) {
+		$clients = $this->getClients();
+		foreach ($clients as $client) {
+			if ($client['id'] == $id) {
+				return $client;
+			}
+		}
+		return null;
 	}
 }

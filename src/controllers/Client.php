@@ -18,4 +18,16 @@ class Client {
 	public function createClient($client) {
 		return $this->getClientModel()->createClient($client);
 	}
+
+	public function updateClient($client) {
+		return $this->getClientModel()->updateClient($client);
+	}
+
+	public function getClientById($id) {
+		return $this->getClientModel()->getClientById($id);
+	}
+
+	function validate($client) {
+		#add code...
+	}
 }
