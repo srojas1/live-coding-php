@@ -12,7 +12,7 @@ Steps:
 
 1. Clone this repository
 2. Run `composer install`
-3. Run `./vendor/bin/phpunit tests/ClientTest.php` (requires php >= 7.3 if you use other version please update composer.json file first)
+3. Run `./vendor/bin/phpunit tests/ClientTest.php` and `./vendor/bin/phpunit tests/BookingTest.php` (requires php >= 7.3 if you use other version please update composer.json file first)
 
 Also, we recommend you read the code so that you are not caught off guard.
 
