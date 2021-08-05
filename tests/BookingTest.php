@@ -31,12 +31,4 @@ class BookingTest extends TestCase {
 		$this->assertEquals($results[0]['checkindate'], '2021-08-04 15:00:00');
 		$this->assertEquals($results[0]['checkoutdate'], '2021-08-11 15:00:00');
 	}
-
-	public function createBooking() {
-		#add booking data
-
-		#validations if necessary
-
-		#test creation
-	}
 }

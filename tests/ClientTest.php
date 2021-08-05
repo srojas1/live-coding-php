@@ -40,8 +40,6 @@ class ClientTest extends TestCase {
 			'phone' => '5555555'
 		];
 
-		#add validations
-
 		$this->client->createClient($client);
 		$results = $this->client->getClients();
 
@@ -58,7 +56,6 @@ class ClientTest extends TestCase {
 			'phone' => '2222222'
 		];
 
-		#add validations
 
 		$this->client->updateClient($client);
 		$results = $this->client->getClients();

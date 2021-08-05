@@ -14,12 +14,4 @@ class BookingModel {
 	public static function getBookings() {
 		return $this->bookingData;
 	}
-
-	public function createBooking($data) {
-		#add booking data
-
-		#validations
-
-		#create
-	}
 }

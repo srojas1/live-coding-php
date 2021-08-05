@@ -26,8 +26,4 @@ class Client {
 	public function getClientById($id) {
 		return $this->getClientModel()->getClientById($id);
 	}
-
-	function validate($client) {
-		#add code...
-	}
 }
