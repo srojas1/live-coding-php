@@ -8,10 +8,7 @@
       "name": "samuel",
       "email": "samuel.rojas@beon.studio"
     }
-  ],
-  "require": {
-    "ext-json": "*//test comment"
-  },
+  ]
   "autoload": {
     "psr-4": {
       "Src\\": "src/"
